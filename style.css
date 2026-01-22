@@ -16,6 +16,20 @@ body{
   transition:0.3s;
 }
 
+
+
+.top-left-img {
+  position: fixed;   /* ثابتة في أعلى اليسار */
+  top: 10px;
+  left: 10px;
+  width: 300px;      /* حجم الصورة */
+  height: auto;
+  z-index: 9999;
+  transition: top 0.3s; /* تأثير سلس إذا تحركت */
+}
+
+
+
 .container{
   width:100%;
   max-width:1200px;
