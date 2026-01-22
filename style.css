@@ -4,15 +4,6 @@
   padding:0;
 }
 
-.top-left-img {
-  position: fixed;   /* ثابتة حتى مع النزول */
-  top: 10px;         /* من الأعلى */
-  left: 10px;        /* من اليسار */
-  width: 300px;      /* حجم الصورة */
-  height: auto;
-  z-index: 9999;     /* تبقى فوق كل شيء */
-}
-
 body{
   font-family: 'Segoe UI', Tahoma, sans-serif;
   min-height:100vh;
