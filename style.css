@@ -16,18 +16,6 @@ body{
   transition:0.3s;
 }
 
-
-<style>
-.fixed-img{
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  width: 200px;
-  z-index: 9999;
-}
-</style>
-
-
 .container{
   width:100%;
   max-width:1200px;
