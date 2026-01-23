@@ -17,17 +17,15 @@ body{
 }
 
 
-
-.top-left-img {
-  position: fixed;   /* ثابتة في أعلى اليسار */
+<style>
+.fixed-img{
+  position: fixed;
   top: 10px;
   left: 10px;
-  width: 300px;      /* حجم الصورة */
-  height: auto;
+  width: 200px;
   z-index: 9999;
-  transition: top 0.3s; /* تأثير سلس إذا تحركت */
 }
-
+</style>
 
 
 .container{
