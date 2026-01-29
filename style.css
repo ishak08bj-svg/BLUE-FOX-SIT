@@ -1,33 +1,55 @@
-.menu{
-  width:260px;
+.apps{
+  width:280px;
   display:flex;
   flex-direction:column;
-  gap:18px;
+  gap:22px;
 }
 
-.app-card{
-  background:linear-gradient(145deg,#0aa2ff,#0066ff);
-  border-radius:22px;
-  padding:20px 15px;
-  text-align:center;
+.lux-btn{
+  position:relative;
+  height:110px;
+  border-radius:28px;
+  background:
+    radial-gradient(circle at top,#1ec9ff,#005eff);
   text-decoration:none;
-  color:white;
-  box-shadow:0 15px 35px rgba(0,0,0,.5);
-  transition:.35s;
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  box-shadow:
+    0 25px 50px rgba(0,0,0,.6),
+    inset 0 2px 6px rgba(255,255,255,.4);
+  transition:.4s cubic-bezier(.4,0,.2,1);
+  overflow:hidden;
 }
 
-.app-card:hover{
-  transform:translateY(-6px) scale(1.03);
-  box-shadow:0 25px 50px rgba(0,0,0,.7);
+.lux-btn::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(120deg,transparent,rgba(255,255,255,.25),transparent);
+  transform:translateX(-100%);
+  transition:.6s;
 }
 
-.icon{
-  font-size:42px;
-  margin-bottom:10px;
+.lux-btn:hover::before{
+  transform:translateX(100%);
 }
 
-.title{
-  font-size:15px;
-  font-weight:700;
-  letter-spacing:1px;
+.lux-btn:hover{
+  transform:translateY(-8px) scale(1.04);
+  box-shadow:0 35px 70px rgba(0,0,0,.8);
+}
+
+.lux-icon{
+  font-size:46px;
+  margin-bottom:8px;
+  filter:drop-shadow(0 4px 10px rgba(0,0,0,.6));
+}
+
+.lux-btn span{
+  font-size:14px;
+  font-weight:800;
+  letter-spacing:1.4px;
 }
