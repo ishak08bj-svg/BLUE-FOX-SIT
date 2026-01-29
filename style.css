@@ -1,3 +1,13 @@
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#0f2027;
+  font-family:Arial;
+}
+
 .apps{
   width:280px;
   display:flex;
@@ -6,50 +16,30 @@
 }
 
 .lux-btn{
-  position:relative;
   height:110px;
   border-radius:28px;
-  background:
-    radial-gradient(circle at top,#1ec9ff,#005eff);
+  background:linear-gradient(145deg,#1ec9ff,#005eff);
   text-decoration:none;
-  color:#fff;
+  color:white;
   display:flex;
   flex-direction:column;
   align-items:center;
   justify-content:center;
-  box-shadow:
-    0 25px 50px rgba(0,0,0,.6),
-    inset 0 2px 6px rgba(255,255,255,.4);
-  transition:.4s cubic-bezier(.4,0,.2,1);
-  overflow:hidden;
-}
-
-.lux-btn::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(120deg,transparent,rgba(255,255,255,.25),transparent);
-  transform:translateX(-100%);
-  transition:.6s;
-}
-
-.lux-btn:hover::before{
-  transform:translateX(100%);
+  box-shadow:0 25px 50px rgba(0,0,0,.6);
+  transition:.4s;
 }
 
 .lux-btn:hover{
   transform:translateY(-8px) scale(1.04);
-  box-shadow:0 35px 70px rgba(0,0,0,.8);
 }
 
 .lux-icon{
   font-size:46px;
   margin-bottom:8px;
-  filter:drop-shadow(0 4px 10px rgba(0,0,0,.6));
 }
 
 .lux-btn span{
   font-size:14px;
-  font-weight:800;
-  letter-spacing:1.4px;
+  font-weight:bold;
+  letter-spacing:1.2px;
 }
